@@ -1,7 +1,8 @@
 # Change Log
 
 ## [Unreleased]
-- Update Licensing information
+### Bug fixing, Improvements
+- Patch #2 - Error when access `admin` path (no trailing slash)
 
 ## [1.0.1] 2020-05-30
 ### Bug fixing, Improvements

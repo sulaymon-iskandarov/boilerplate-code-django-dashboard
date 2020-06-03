@@ -1,8 +1,8 @@
 {
   "name": "boilerplate-code-django-dashboard",
-  "mastertemplate": "boilerplate-code-flask-dashboard",
+  "mastertemplate": "boilerplate-code-django-dashboard",
   "version": "1.0.1",
-  "description": "Template project - Django Dashboard Boilerplate Code.",
+  "description": "Template project - Django Boilerplate Code",
   "scripts": {
   },
   "repository": {

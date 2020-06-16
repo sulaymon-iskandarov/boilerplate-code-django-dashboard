@@ -21,6 +21,7 @@ Copyright (c) 2019 - present [AppSeed](http://appseed.us/)
 | Remove footer credits | **YES** |
 | --- | --- |
 | Remove copyright mentions from source code | NO |
+| Production deployment assistance | NO |
 | Create HTML/CSS template for sale | NO |
 | Create Theme/Template for CMS for sale | NO |
 | Separate sale of our UI Elements | NO |

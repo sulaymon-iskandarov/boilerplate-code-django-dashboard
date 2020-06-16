@@ -16,6 +16,8 @@ All commercial web apps (including this one) provided by AppSeed are released un
 
 - Create single personal website/app
 - Create single website/app for client
+- Paying end-users - YES
+- Production deployment assistance - NO
 
 <br />
 
@@ -26,6 +28,8 @@ All commercial web apps (including this one) provided by AppSeed are released un
 - Create multiple personal websites/apps
 - Create multiple websites/apps for clients
 - Create single SaaS application
+- Paying end-users - YES
+- Production deployment assistance - NO
 
 <br />
 

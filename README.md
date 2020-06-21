@@ -18,6 +18,12 @@
 - More [Django Admin Dashboards](https://appseed.us/admin-dashboards/django) - index hosted by **[AppSeed](https://appseed.us)**
 - [Open-Source Admin Dashboards](https://appseed.us/admin-dashboards/open-source) - index hosted by **[AppSeed](https://appseed.us)**
 
+> Projects that use this starter
+
+- [Django Corona Dark](https://appseed.us/admin-dashboards/django-dashboard-corona-dark) - [demo](https://django-dashboard-corona-dark.appseed.us/), [sources](https://github.com/app-generator/django-dashboard-corona-dark)
+- [Django DattaAble PRO](https://appseed.us/admin-dashboards/django-dashboard-dattaable-pro) - [demo](https://django-dashboard-dattaable-pro.appseed.us/)
+- [Django Atlantis Dark](https://appseed.us/admin-dashboards/django-dashboard-atlantis-dark) - [demo](https://django-dashboard-atlantis-dark.appseed.us/), [sources](https://github.com/app-generator/django-dashboard-atlantis-dark)
+
 <br />
 
 ## Want more? Go PRO!

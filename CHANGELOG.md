@@ -1,5 +1,12 @@
 # Change Log
 
+## Unreleased
+### Bug fixes
+
+- Patch #4 - Whitenoise Fix - Wrong positioning in 'core/settings.py'
+    - WhiteNoiseMiddleware must be positioned right after SecurityMiddleware
+    - Impacted file: **core/settings.py** / MIDDLEWARE section
+
 ## [1.0.2] 2020-06-18
 ### Bug fixing, Improvements
 

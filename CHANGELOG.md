@@ -3,6 +3,10 @@
 ## Unreleased
 ### Bug fixes
 
+- Unreported Bug - Left menu selection based on the current page. Modified files:
+    - app\views.py
+    - core\templates\includes\sidebar-rtl.html
+
 - Patch #4 - Whitenoise Fix - Wrong positioning in 'core/settings.py'
     - WhiteNoiseMiddleware must be positioned right after SecurityMiddleware
     - Impacted file: **core/settings.py** / MIDDLEWARE section

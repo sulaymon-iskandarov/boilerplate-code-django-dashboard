@@ -1,7 +1,14 @@
 # Change Log
 
-## Unreleased
-### Bug fixes
+## [1.0.3] 2021-01-01
+### Bug fixing, Improvements
+
+- Routing - remove a duplicate rule
+    - `admin` rule (no slash at the end)
+
+- Auth forms
+    - Login Page - update label
+    - Registration - hide the form on success
 
 - Unreported Bug - Left menu selection based on the current page. Modified files:
     - app\views.py

@@ -9,13 +9,15 @@
 - Deployment scripts: Docker, Gunicorn / Nginx
 - Support via **Github** (issues tracker) and [Discord](https://discord.gg/fZC6hup).
 
+<br />
+
 > Links
 
-- [Boierplate Code Django Dashboard](https://boilerplate-code-django-dashboard.appseed.us/) - LIVE Demo
-- [Boierplate Code Django](https://docs.appseed.us/boilerplate-code/django-dashboard/) - Documentation
-- [Boierplate Code Django Dashboard](https://appseed.us/boilerplate-code/django-dashboard) - Official product page
-- More [Django Admin Dashboards](https://appseed.us/admin-dashboards/django) - index hosted by **[AppSeed](https://appseed.us)**
-- [Open-Source Admin Dashboards](https://appseed.us/admin-dashboards/open-source) - index hosted by **[AppSeed](https://appseed.us)**
+- [Boierplate Django Dashboard](https://appseed.us/boilerplate-code/django-dashboard) - Product page
+- [Boierplate Django Dashboard - Demo](https://boilerplate-code-django-dashboard.appseed.us/) - LIVE Demo
+- [Boierplate Django Dashboard - Docs](https://docs.appseed.us/boilerplate-code/django-dashboard/) - Documentation
+
+<br />
 
 > Projects that use this starter
 
@@ -29,9 +31,9 @@
 
 PRO versions include **Premium UI Kits**, Lifetime updates and **24/7 LIVE Support** (via [Discord](https://discord.gg/fZC6hup))
 
-| [Django Gradient PRO](https://appseed.us/admin-dashboards/django-dashboard-gradient-pro) | [Django Dashboard Black PRO](https://appseed.us/admin-dashboards/django-dashboard-black-pro) | [Django Dashboard Argon PRO](https://appseed.us/admin-dashboards/django-dashboard-argon-pro) |
+| [Django Datta PRO](https://appseed.us/admin-dashboards/django-dashboard-dattaable-pro) | [Django Material PRO](https://appseed.us/admin-dashboards/django-dashboard-material-pro) | [Django Volt PRO](https://appseed.us/admin-dashboards/django-dashboard-volt-pro) |
 | --- | --- | --- |
-| [![Django Gradient PRO](https://raw.githubusercontent.com/app-generator/django-dashboard-gradient-pro/master/media/django-dashboard-gradient-pro-screen.png)](https://appseed.us/admin-dashboards/django-dashboard-gradient-pro) | [![Django Dashboard Black PRO](https://raw.githubusercontent.com/app-generator/django-dashboard-black-pro/master/media/django-dashboard-black-pro-screen.png)](https://appseed.us/admin-dashboards/django-dashboard-black-pro) | [![Django Dashboard Argon PRO](https://raw.githubusercontent.com/app-generator/django-dashboard-argon-pro/master/media/django-dashboard-argon-pro-screen.png)](https://appseed.us/admin-dashboards/django-dashboard-argon-pro)
+| [![Django Datta PRO](https://raw.githubusercontent.com/app-generator/django-dashboard-dattaable-pro/master/media/django-dashboard-dattaable-pro-screen.png)](https://appseed.us/admin-dashboards/django-dashboard-dattaable-pro) | [![Django Material PRO](https://raw.githubusercontent.com/app-generator/django-dashboard-material-pro/master/media/django-dashboard-material-pro-screen.png)](https://appseed.us/admin-dashboards/django-dashboard-material-pro) | [![Django Volt PRO](https://raw.githubusercontent.com/app-generator/django-dashboard-volt-pro/master/media/django-dashboard-volt-pro-screen.png)](https://appseed.us/admin-dashboards/django-dashboard-volt-pro)
 
 <br />
 <br />
@@ -219,4 +221,4 @@ Visit `http://localhost:8001` in your browser. The app should be up & running.
 <br />
 
 ---
-[Django Dashboard Boilerplate](https://appseed.us/boilerplate-code/django-dashboard) - Provided by **AppSeed** [Web App Generator](https://appseed.us/app-generator).
+[Django Dashboard Boilerplate](https://appseed.us/boilerplate-code/django-dashboard) - Provided by **AppSeed** [App Generator](https://appseed.us/app-generator).

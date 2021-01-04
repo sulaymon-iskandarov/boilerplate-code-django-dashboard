@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.0.4] 2021-01-04
+### Bug fixing
+
+- Read properly the `.env` variables. Impacted file(s):
+    - Impacted file: **core/settings.py**
+
 ## [1.0.3] 2021-01-01
 ### Bug fixing, Improvements
 

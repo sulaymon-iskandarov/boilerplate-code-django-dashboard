@@ -53,7 +53,7 @@ On top of the default authentication the code will provide:
 
 > STATUS: **Work in progress**
 
-Implemented in a separate application "datatables" - Features:
+Implemented in a separate application `api` - Features:
 
 - `api/transactions/create` - create transaction
 - `api/transactions/edit/id`- edit transaction
@@ -81,7 +81,7 @@ class Transaction(models.Model):
 
 > STATUS: **Work in progress**
 
-Implemented in a separate application "datatables" - Features:
+Implemented in a separate application `datatables` - Features:
 
 - Table `Transaction` saves the information (previously defined by the `API` feature).
 - Load sample data using admin section
@@ -96,7 +96,7 @@ Implemented in a separate application "datatables" - Features:
 
 > STATUS: **Work in progress**
 
-Implemented in a separate application "charts" - Features:
+Implemented in a separate application `charts` - Features:
 
 - Manage orders and display the information visually using charts and widgets
 - Table `Transaction` saves the information (previously defined by the `API` feature).
@@ -114,7 +114,7 @@ Implemented in a separate application "charts" - Features:
 
 > STATUS: **Work in progress**
 
-Implemented in a separate application "socialauth".
+Implemented in a separate application `socialauth`.
 The application should provide multiple authentication options: 
 
 - Default session-based authentication
@@ -142,7 +142,7 @@ Codebase should include dependencies and scripts to manage with ease following d
 
 > STATUS: **Work in progress**
 
-Implemented in a separate application "payments". This feature implements `one-time` payments with [Stripe Checkout](https://stripe.com/payments/checkout)
+Implemented in a separate application `payments`. This feature implements `one-time` payments with [Stripe Checkout](https://stripe.com/payments/checkout)
 
 > Related blog content: [Django Stripe Tutorial](https://testdriven.io/blog/django-stripe-tutorial/)
 

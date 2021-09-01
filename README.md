@@ -2,7 +2,7 @@
 
 > Template [boilerplate code](https://appseed.us/boilerplate-code) used by [AppSeed](https://appseed.us) to generate simple admin dashboards coded in [Django](https://www.djangoproject.com/) - Features
 
-- UI Kit: **Datta Able Dashboard** (Lite Version) provided by **CodedThemes**
+- UI Kit: **Volt Dashboard** (Free Version) provided by **Themesberg**
 - SQLite Database, Django Native ORM
 - Modular design, clean codebase
 - Session-Based Authentication, Forms validation
@@ -19,15 +19,18 @@
 
 <br />
 
-## Want more? Go PRO!
+> Roadmap as specified by the product [SPECS](https://github.com/app-generator/boilerplate-code-django-dashboard/blob/master/SPECS.md)
 
-PRO versions include **Premium UI Kits**, Lifetime updates and **24/7 LIVE Support** (via [Discord](https://discord.gg/fZC6hup))
+- Updated dependencies
+- Pythonic Footprint
+- Improved Authentication: Extended user model, Password reset, Email confirmation on register
+- API via DRF
+- Data Tables - manages paginated information 
+- Sample Charts
+- Social Login via Google and Github
+- Deployment: Docker, HEROKU, AWS Ec2, Google Cloud 
+- Payments: One-time payments via [Stripe Checkout](https://stripe.com/payments/checkout)
 
-| [Django Datta PRO](https://appseed.us/admin-dashboards/django-dashboard-dattaable-pro) | [Django Material PRO](https://appseed.us/admin-dashboards/django-dashboard-material-pro) | [Django Volt PRO](https://appseed.us/admin-dashboards/django-dashboard-volt-pro) |
-| --- | --- | --- |
-| [![Django Datta PRO](https://raw.githubusercontent.com/app-generator/django-dashboard-dattaable-pro/master/media/django-dashboard-dattaable-pro-screen.png)](https://appseed.us/admin-dashboards/django-dashboard-dattaable-pro) | [![Django Material PRO](https://raw.githubusercontent.com/app-generator/django-dashboard-material-pro/master/media/django-dashboard-material-pro-screen.png)](https://appseed.us/admin-dashboards/django-dashboard-material-pro) | [![Django Volt PRO](https://raw.githubusercontent.com/app-generator/django-dashboard-volt-pro/master/media/django-dashboard-volt-pro-screen.png)](https://appseed.us/admin-dashboards/django-dashboard-volt-pro)
-
-<br />
 <br />
 
 ![Boierplate Code Django Dashboard - Template project provided by AppSeed.](https://raw.githubusercontent.com/app-generator/boilerplate-code-django-dashboard/master/media/boilerplate-code-django-dashboard-screen.png)

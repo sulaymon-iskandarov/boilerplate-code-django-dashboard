@@ -22,7 +22,7 @@ The product should provide all features listed below:
 
 **1# - Dependencies**
 
-> STATUS: **Work in progress**
+> STATUS: **Finished**
 
 The codebase should use the latest stable packages. 
 

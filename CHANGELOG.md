@@ -1,5 +1,11 @@
 # Change Log
 
+## [2.0.0] 2021-09-01
+### Improvements
+
+- Dependencies update (all packages) 
+  - Django==3.2.6 (latest stable version)
+
 ## [1.0.5] 2021-08-27
 ### Improvements
 

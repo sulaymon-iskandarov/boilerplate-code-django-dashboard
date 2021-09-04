@@ -1,8 +1,8 @@
 FROM python:3.9
 
 COPY manage.py gunicorn-cfg.py requirements.txt .env ./
-COPY app app
-COPY authentication authentication
+COPY apps/app app
+COPY apps/authentication authentication
 COPY core core
 
 RUN pip install -r requirements.txt

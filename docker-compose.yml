@@ -1,6 +1,7 @@
-version: '3'
+version: '3.8'
 services:
   appseed-app:
+    container_name: appseed_app
     restart: always
     env_file: .env
     build: .
@@ -10,6 +11,7 @@ services:
       - db_network
       - web_network
   nginx:
+    container_name: nginx
     restart: always
     image: "nginx:latest"
     ports:

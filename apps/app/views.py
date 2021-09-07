@@ -5,8 +5,9 @@ Copyright (c) 2019 - present AppSeed.us
 
 from django import template
 from django.contrib.auth.decorators import login_required
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.template import loader
+from django.urls import reverse
 
 
 @login_required(login_url="/login/")
@@ -25,6 +26,9 @@ def pages(request):
     try:
 
         load_template = request.path.split('/')[-1]
+
+        if load_template == 'admin':
+            return HttpResponseRedirect(reverse('admin:index'))
         context['segment'] = load_template
 
         html_template = loader.get_template(load_template)
@@ -36,6 +40,5 @@ def pages(request):
         return HttpResponse(html_template.render(context, request))
 
     except:
-
         html_template = loader.get_template('page-500.html')
         return HttpResponse(html_template.render(context, request))

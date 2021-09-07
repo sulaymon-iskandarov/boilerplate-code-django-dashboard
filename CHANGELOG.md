@@ -1,5 +1,10 @@
 # Change Log
 
+## [2.0.2] 2021-09-07
+### Fixes
+
+- Patch [#16](https://github.com/app-generator/boilerplate-code-django-dashboard/issues/16): Minor issue in Docker
+
 ## [2.0.1] 2021-09-07
 ### Improvements & Fixes
 

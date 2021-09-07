@@ -1,5 +1,14 @@
 # Change Log
 
+## [2.0.1] 2021-09-07
+### Improvements & Fixes
+
+- Better Code formatting
+- Improved Files organization
+- Optimize imports
+- Docker Scripts Update
+- Patch 500 Error when authenticated users access `admin` path (no slash at the end)
+
 ## [2.0.0] 2021-09-01
 ### Improvements
 

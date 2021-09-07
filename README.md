@@ -21,19 +21,19 @@
 
 > Roadmap as specified by the product [SPECS](https://github.com/app-generator/boilerplate-code-django-dashboard/blob/master/SPECS.md)
 
-- Updated dependencies
-- Pythonic Footprint
-- Improved Authentication: Extended user model, Password reset, Email confirmation on register
-- API via DRF
-- Data Tables - manages paginated information 
-- Sample Charts
-- Social Login via Google and Github
-- Deployment: Docker, HEROKU, AWS Ec2, Google Cloud 
-- Payments: One-time payments via [Stripe Checkout](https://stripe.com/payments/checkout)
+- [Done] Updated dependencies
+- [Done] Pythonic Footprint
+- [WIP] Improved Authentication: Extended user model, Password reset, Email confirmation on register
+- [WIP] API via DRF
+- [WIP] Data Tables - manages paginated information 
+- [WIP] Sample Charts
+- [WIP] Social Login via Google and Github
+- [WIP] Deployment: Docker, HEROKU, AWS Ec2, Google Cloud 
+- [WIP] Payments: One-time payments via [Stripe Checkout](https://stripe.com/payments/checkout)
 
 <br />
 
-![Boierplate Code Django Dashboard - Template project provided by AppSeed.](https://raw.githubusercontent.com/app-generator/boilerplate-code-django-dashboard/master/media/boilerplate-code-django-dashboard-screen.png)
+![Boierplate Code Django Dashboard - Template project provided by AppSeed.](https://user-images.githubusercontent.com/51070104/132288100-0c65159f-71a6-41f0-9f55-9544916385ae.jpg)
 
 <br />
 
@@ -108,16 +108,17 @@ The project is coded using a simple and intuitive structure presented bellow:
    |     page-500.html                     # Error 404 page
    |       *.html                          # All other HTML pages
    |
-   |-- authentication/                     # Handles auth routes (login and register)
+   |-- apps/
+   |    |-- authentication/                # Handles auth routes (login and register)
+   |    |    |
+   |    |    |-- urls.py                   # Define authentication routes  
+   |    |    |-- views.py                  # Handles login and registration  
+   |    |    |-- forms.py                  # Define auth forms  
    |    |
-   |    |-- urls.py                        # Define authentication routes  
-   |    |-- views.py                       # Handles login and registration  
-   |    |-- forms.py                       # Define auth forms  
-   |
-   |-- app/                                # A simple app that serve HTML files
-   |    |
-   |    |-- views.py                       # Serve HTML pages for authenticated users
-   |    |-- urls.py                        # Define some super simple routes  
+   |    |-- app/                           # A simple app that serve HTML files
+   |         |
+   |         |-- views.py                  # Serve HTML pages for authenticated users
+   |         |-- urls.py                   # Define some super simple routes  
    |
    |-- requirements.txt                    # Development modules - SQLite storage
    |
@@ -203,7 +204,7 @@ $ cd boilerplate-code-django-dashboard
 $ sudo docker-compose pull && sudo docker-compose build && sudo docker-compose up -d
 ```
 
-Visit `http://localhost:5005` in your browser. The app should be up & running.
+Visit `http://localhost:85` in your browser. The app should be up & running.
 
 > Create Django `superuser` 
 

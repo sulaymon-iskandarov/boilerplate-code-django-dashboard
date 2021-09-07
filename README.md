@@ -33,7 +33,7 @@
 
 <br />
 
-![Boierplate Code Django Dashboard - Template project provided by AppSeed.](https://raw.githubusercontent.com/app-generator/boilerplate-code-django-dashboard/master/media/boilerplate-code-django-dashboard-screen.png)
+![Boierplate Code Django Dashboard - Template project provided by AppSeed.](https://user-images.githubusercontent.com/51070104/132288100-0c65159f-71a6-41f0-9f55-9544916385ae.jpg)
 
 <br />
 

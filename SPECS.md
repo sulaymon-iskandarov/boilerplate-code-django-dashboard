@@ -8,20 +8,25 @@ Copyright (c) 2019 - present [AppSeed](http://appseed.us/)
 
 The product should provide all features listed below:
 
-- Updated dependencies
-- Pythonic Footprint
-- Improved Authentication: Extended user model, Password reset, Email confirmation on register
+- **Status: DONE** - Updated dependencies (all [packages](https://github.com/app-generator/boilerplate-code-django-dashboard/blob/master/requirements.txt))
+  - Django==3.2.6 (latest stable version)
+- **Status: DONE** - Pythonic Footprint: 
+  - Better Code formatting
+  - Improved Files organization
+  - Optimized imports
+  - Docker Scripts Update
+- **Status: WIP** - Improved Authentication: Extended user model, Password reset, Email confirmation on register
   - New user Fields: all information presented in the settings page:
     - First, Last Name
     - Birthday, Gender, Email, Phone   
     - Address, Number, City, ZIP
     - User Photo
-- API via DRF
-- Data Tables - manages paginated information 
-- Sample Charts
-- Social Login via Google and Github
-- Deployment: Docker, HEROKU, AWS Ec2, Google Cloud 
-- Payments: One-time payments via [Stripe Checkout](https://stripe.com/payments/checkout)
+- **Status: WIP** - API via DRF
+- **Status: WIP** - Data Tables - manages paginated information 
+- **Status: WIP** - Sample Charts
+- **Status: WIP** - Social Login via Google and Github
+- **Status: WIP** - Deployment: Docker, HEROKU, AWS Ec2, Google Cloud 
+- **Status: WIP** - Payments: One-time payments via [Stripe Checkout](https://stripe.com/payments/checkout)
 
 <br />
 

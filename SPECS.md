@@ -11,6 +11,11 @@ The product should provide all features listed below:
 - Updated dependencies
 - Pythonic Footprint
 - Improved Authentication: Extended user model, Password reset, Email confirmation on register
+  - New user Fields: all information presented in the settings page:
+    - First, Last Name
+    - Birthday, Gender, Email, Phone   
+    - Address, Number, City, ZIP
+    - User Photo
 - API via DRF
 - Data Tables - manages paginated information 
 - Sample Charts
@@ -22,7 +27,7 @@ The product should provide all features listed below:
 
 **1# - Dependencies**
 
-> STATUS: **Finished**
+> STATUS: **DONE**
 
 The codebase should use the latest stable packages. 
 
@@ -30,7 +35,7 @@ The codebase should use the latest stable packages.
 
 **2# - Pythonic Footprint**
 
-> STATUS: **Work in progress**
+> STATUS: **DONE**
 
 The codebase should implement the best practices adopted by the Python community. 
 
@@ -42,10 +47,15 @@ The codebase should implement the best practices adopted by the Python community
 
 On top of the default authentication the code will provide: 
 
-- User Model extension
 - Optional email confirmation during the registration process
   - The feature becomes active as specified in the configuration
 - Password reset mechanism 
+- User Model extension
+  - All Fiels of exposed by `settings.html` page
+  
+<br />
+
+![User Model extension - New fields](https://user-images.githubusercontent.com/51070104/132366814-f8843ea2-19e0-46ae-a2ca-f477ab88d64d.png)
 
 <br />
 

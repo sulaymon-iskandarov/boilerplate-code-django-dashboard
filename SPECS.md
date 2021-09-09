@@ -25,7 +25,7 @@ The product should provide all features listed below:
 - **Status: WIP** - Data Tables - manages paginated information 
 - **Status: WIP** - Sample Charts
 - **Status: WIP** - Social Login via Google and Github
-- **Status: WIP** - Deployment: Docker, HEROKU, AWS Ec2, Google Cloud 
+- **Status: WIP** - Deployment: Docker, HEROKU, AWS Ec2, Google Cloud, Azure 
 - **Status: WIP** - Payments: One-time payments via [Stripe Checkout](https://stripe.com/payments/checkout)
 
 <br />

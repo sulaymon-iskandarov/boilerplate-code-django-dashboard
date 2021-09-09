@@ -28,7 +28,7 @@
 - [WIP] Data Tables - manages paginated information 
 - [WIP] Sample Charts
 - [WIP] Social Login via Google and Github
-- [WIP] Deployment: Docker, HEROKU, AWS Ec2, Google Cloud 
+- [WIP] Deployment: Docker, HEROKU, AWS Ec2, Google Cloud, Azure 
 - [WIP] Payments: One-time payments via [Stripe Checkout](https://stripe.com/payments/checkout)
 
 <br />

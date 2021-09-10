@@ -1,7 +1,10 @@
 # [Django Dashboard Boilerplate](https://appseed.us/boilerplate-code/django-dashboard)
 
-> Template [boilerplate code](https://appseed.us/boilerplate-code) used by [AppSeed](https://appseed.us) to generate simple admin dashboards coded in [Django](https://www.djangoproject.com/) - Features
+> Template [boilerplate code](https://appseed.us/boilerplate-code) used by [AppSeed](https://appseed.us) to generate simple admin dashboards coded in [Django](https://www.djangoproject.com/) - Features:
 
+<br />
+
+- Up-to-date [dependencies](./requirements.txt): **Django 3.2.6 LTS**
 - UI Kit: **Volt Dashboard** (Free Version) provided by **Themesberg**
 - SQLite Database, Django Native ORM
 - Modular design, clean codebase

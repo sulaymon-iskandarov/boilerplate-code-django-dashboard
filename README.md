@@ -16,8 +16,8 @@
 
 > Links
 
-- [Boierplate Django Dashboard](https://appseed.us/boilerplate-code/django-dashboard) - Product page
-- [Boierplate Django Dashboard - Demo](https://boilerplate-code-django-dashboard.appseed.us/) - LIVE Demo
+- [Boierplate Django Dashboard](https://appseed.us/admin-dashboards/django-dashboard-volt) - Product page
+- [Boierplate Django Dashboard - Demo](https://django-volt-dashboard.appseed-srv1.com/) - LIVE Demo
 - [Boierplate Django Dashboard - Docs](https://docs.appseed.us/boilerplate-code/django-dashboard/) - Documentation
 
 <br />
@@ -26,7 +26,10 @@
 
 - [Done] Updated dependencies
 - [Done] Pythonic Footprint
-- [WIP] Improved Authentication: Extended user model, Password reset, Email confirmation on register
+- [WIP] Improved Authentication: 
+  - Extended user model
+  - Password reset
+  - Email confirmation on register
 - [WIP] API via DRF
 - [WIP] Data Tables - manages paginated information 
 - [WIP] Sample Charts

@@ -1,5 +1,11 @@
 # Change Log
 
+## Unreleased 
+### Improvements & Fixes
+
+- [2021-09-07] Gulp Tooling: Minor improvement
+  - `core/static/assets/gulpfile.js`
+
 ## [2.0.2] 2021-09-07
 ### Fixes
 

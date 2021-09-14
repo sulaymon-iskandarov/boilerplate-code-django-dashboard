@@ -1,9 +1,11 @@
 # Change Log
 
-## Unreleased 
+## [2.0.3] 2021-09-14 
 ### Improvements & Fixes
 
-- [2021-09-07] Gulp Tooling: Minor improvement
+- Patch (Minor) Bug: UI Notification Page
+  - Popups were dead.
+- Gulp Tooling: Minor improvement
   - `core/static/assets/gulpfile.js`
 
 ## [2.0.2] 2021-09-07

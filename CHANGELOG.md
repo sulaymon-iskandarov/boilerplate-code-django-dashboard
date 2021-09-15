@@ -1,5 +1,12 @@
 # Change Log
 
+## [2.0.4] 2021-09-15 
+### Improvements
+
+- Codebase update
+  - `assets` & `templates` moved to `apps` folder
+  - `apps/base` renamed to `apps/home`
+
 ## [2.0.3] 2021-09-14 
 ### Improvements & Fixes
 

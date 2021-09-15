@@ -120,6 +120,17 @@ STATICFILES_DIRS = (
     os.path.join(CORE_DIR, 'apps/static'),
 )
 
+# Email Backend configurations
 
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+EMAIL_HOST = config("EMAIL_HOST", default="")
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = config("EMAIL_HOST_USER", default="")
+EMAIL_HOST_PASSWORD = config("EMAIL_HOST_PASSWORD", default="")
+
+# Password Reset Configuration
+
+PASSWORD_RESET_TIMEOUT = 86400  # 1 day in seconds
 #############################################################
 #############################################################

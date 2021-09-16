@@ -132,5 +132,9 @@ EMAIL_HOST_PASSWORD = config("EMAIL_HOST_PASSWORD", default="")
 # Password Reset Configuration
 
 PASSWORD_RESET_TIMEOUT = 86400  # 1 day in seconds
+
+# User Email Confirmation configurations
+
+EMAIL_CONFIRMATION = config("EMAIL_CONFIRMATION", default=True)
 #############################################################
 #############################################################

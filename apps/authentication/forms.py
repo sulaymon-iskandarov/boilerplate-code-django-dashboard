@@ -5,12 +5,12 @@ Copyright (c) 2019 - present AppSeed.us
 from django import forms
 from django.conf import settings
 from django.contrib.auth.forms import UserCreationForm
-from django.contrib.auth.models import User
 from django.core.mail import send_mail
 from django.utils.encoding import force_bytes
 from django.utils.http import urlsafe_base64_encode
 
 from apps.authentication.token import account_activation_token
+from apps.profile.models import Profile
 
 
 class LoginForm(forms.Form):
@@ -61,7 +61,7 @@ class SignUpForm(UserCreationForm):
         ))
 
     class Meta:
-        model = User
+        model = Profile
         fields = ('username', 'email', 'password1', 'password2')
 
     def save(self, commit=True):

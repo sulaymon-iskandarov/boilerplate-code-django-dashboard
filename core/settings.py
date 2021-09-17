@@ -29,8 +29,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'apps.home'  # Enable the inner home (home)
+    'apps.home',  # Enable the inner home (home)
+    'apps.profile'
 ]
+
+AUTH_USER_MODEL = 'apps_profile.Profile'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -136,5 +139,9 @@ PASSWORD_RESET_TIMEOUT = 86400  # 1 day in seconds
 # User Email Confirmation configurations
 
 EMAIL_CONFIRMATION = config("EMAIL_CONFIRMATION", default=False)
+
+# Default image storage
+
+DEFAULT_FILE_IMAGE_STORAGE = config("DEFAULT_FILE_IMAGE_STORAGE", default="uploads/")
 #############################################################
 #############################################################

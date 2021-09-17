@@ -5,10 +5,6 @@ from django.utils.translation import ugettext_lazy as _
 
 
 class ProfileManager(BaseUserManager):
-    """
-        Custom user model manager where email is the unique identifiers
-        for authentication instead of usernames.
-        """
 
     def create_user(self, email, username, password, **extra_fields):
         """

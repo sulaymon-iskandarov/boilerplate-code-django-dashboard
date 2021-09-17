@@ -12,7 +12,7 @@ class ProfileManager(BaseUserManager):
 
     def create_user(self, email, username, password, **extra_fields):
         """
-        Create and save a User with the given email and password.
+        Create and save a User with the given username, email and password.
         """
         if not email:
             raise ValueError(_('The Email must be set'))
@@ -24,7 +24,7 @@ class ProfileManager(BaseUserManager):
 
     def create_superuser(self, email, username, password, **extra_fields):
         """
-        Create and save a SuperUser with the given email and password.
+        Create and save a SuperUser with the given username, email and password.
         """
         extra_fields.setdefault('is_staff', True)
         extra_fields.setdefault('is_superuser', True)
@@ -44,6 +44,10 @@ class Profile(AbstractUser):
     - last name
     - email
     - username
+    - is_active
+    - is_staff
+    - date_joined
+    - last_login
     """
 
     birthday = models.DateField(auto_now=False, blank=True, null=True)
@@ -53,6 +57,6 @@ class Profile(AbstractUser):
     address_number = models.CharField(max_length=35, blank=True, null=True)
     city = models.CharField(max_length=35, blank=True, null=True)
     zip = models.CharField(max_length=35, blank=True, null=True)
-    user_photo = models.ImageField(upload_to=settings.DEFAULT_FILE_IMAGE_STORAGE, null=True, blank=True)
+    user_photo = models.ImageField(upload_to="settings.DEFAULT_FILE_IMAGE_STORAGE", null=True, blank=True)
 
     objects = ProfileManager()

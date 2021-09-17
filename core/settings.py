@@ -122,7 +122,7 @@ STATICFILES_DIRS = (
 
 # Email Backend configurations
 
-EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+EMAIL_BACKEND = config("EMAIL_BACKEND", "django.core.mail.backends.console.EmailBackend")
 EMAIL_HOST = config("EMAIL_HOST", default="")
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
@@ -135,6 +135,6 @@ PASSWORD_RESET_TIMEOUT = 86400  # 1 day in seconds
 
 # User Email Confirmation configurations
 
-EMAIL_CONFIRMATION = config("EMAIL_CONFIRMATION", default=True)
+EMAIL_CONFIRMATION = config("EMAIL_CONFIRMATION", default=False)
 #############################################################
 #############################################################

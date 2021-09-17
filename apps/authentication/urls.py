@@ -4,7 +4,7 @@ Copyright (c) 2019 - present AppSeed.us
 """
 
 from django.urls import path
-from .views import login_view, register_user
+from .views import login_view, register_user, activate_account
 from django.contrib.auth import views
 
 urlpatterns = [
@@ -15,6 +15,6 @@ urlpatterns = [
     path('password_reset/', views.PasswordResetView.as_view(), name="password_reset"),
     path('reset/<uidb64>/<token>/', views.PasswordResetConfirmView.as_view(), name="password_reset_confirm"),
     path('password_reset/done/', views.PasswordResetDoneView.as_view(), name="password_reset_done"),
-    path('reset/done/', views.PasswordResetCompleteView.as_view(), name="password_reset_complete")
-
+    path('reset/done/', views.PasswordResetCompleteView.as_view(), name="password_reset_complete"),
+    path('activate/<uidb64>/<token>/', activate_account, name='activate')
 ]

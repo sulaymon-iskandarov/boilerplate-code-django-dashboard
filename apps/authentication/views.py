@@ -15,6 +15,7 @@ from apps.authentication.token import account_activation_token
 from apps.profile.models import Profile
 from .forms import LoginForm, SignUpForm
 
+from django.conf import settings
 
 def login_view(request):
     form = LoginForm(request.POST or None)
@@ -50,8 +51,13 @@ def register_user(request):
             raw_password = form.cleaned_data.get("password1")
             user = authenticate(username=username, password=raw_password)
 
-            msg = 'User created - please <a href="/login">login</a>.'
             success = True
+
+            if settings.EMAIL_CONFIRMATION:
+                msg = 'User created (inactive state). <br />Please confirm your email.'
+            else:    
+                msg = 'User created - please <a href="/login">login</a>.'
+
 
             # return redirect("/login/")
 

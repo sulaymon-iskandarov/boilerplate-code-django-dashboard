@@ -4,6 +4,7 @@ Copyright (c) 2019 - present AppSeed.us
 """
 
 import os
+from typing import cast
 from decouple import config
 from unipath import Path
 
@@ -128,7 +129,7 @@ STATICFILES_DIRS = (
 EMAIL_BACKEND = config("EMAIL_BACKEND", "django.core.mail.backends.console.EmailBackend")
 EMAIL_HOST = config("EMAIL_HOST", default="")
 EMAIL_USE_TLS = True
-EMAIL_PORT = 587
+EMAIL_PORT = config("EMAIL_HOST", default=587)
 EMAIL_HOST_USER = config("EMAIL_HOST_USER", default="")
 EMAIL_HOST_PASSWORD = config("EMAIL_HOST_PASSWORD", default="")
 
@@ -138,7 +139,7 @@ PASSWORD_RESET_TIMEOUT = 86400  # 1 day in seconds
 
 # User Email Confirmation configurations
 
-EMAIL_CONFIRMATION = config("EMAIL_CONFIRMATION", default=False)
+EMAIL_CONFIRMATION = config("EMAIL_CONFIRMATION", default=False, cast=bool)
 
 # Default image storage
 

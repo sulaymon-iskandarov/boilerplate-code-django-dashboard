@@ -3,7 +3,6 @@
 Copyright (c) 2019 - present AppSeed.us
 """
 
-
 # Create your views here.
 from django.contrib.auth import authenticate, login
 from django.shortcuts import render, redirect
@@ -17,6 +16,7 @@ from .forms import LoginForm, SignUpForm
 
 from django.conf import settings
 
+
 def login_view(request):
     form = LoginForm(request.POST or None)
 
@@ -29,10 +29,20 @@ def login_view(request):
             password = form.cleaned_data.get("password")
             user = authenticate(username=username, password=password)
             if user is not None:
-                login(request, user)
-                return redirect("/")
+                    login(request, user)
+                    return redirect("/")
             else:
-                msg = 'Invalid credentials'
+                try:
+                    user_temp = Profile.objects.get(username=username)
+                except ObjectDoesNotExist:
+                    user_temp = None
+
+                if user_temp is None:
+                    msg = "This account doesn't exist."
+                elif not user_temp.is_active:
+                    msg = 'Inactive account - Please confirm your email or contact support'
+                else:
+                    msg = 'Invalid credentials'
         else:
             msg = 'Error validating the form'
 
@@ -55,9 +65,8 @@ def register_user(request):
 
             if settings.EMAIL_CONFIRMATION:
                 msg = 'User created (inactive state). <br />Please confirm your email.'
-            else:    
+            else:
                 msg = 'User created - please <a href="/login">login</a>.'
-
 
             # return redirect("/login/")
 

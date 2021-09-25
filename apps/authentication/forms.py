@@ -4,10 +4,11 @@ Copyright (c) 2019 - present AppSeed.us
 """
 from django import forms
 from django.conf import settings
-from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.forms import UserCreationForm, PasswordResetForm
 from django.core.mail import send_mail
 from django.utils.encoding import force_bytes
 from django.utils.http import urlsafe_base64_encode
+from django.core.exceptions import ValidationError, ObjectDoesNotExist
 
 from apps.authentication.token import account_activation_token
 from apps.profile.models import Profile
@@ -86,3 +87,14 @@ class SignUpForm(UserCreationForm):
                   f"http://localhost:8002/activate/{uid}/{token}/"
         send_mail(subject, message, settings.EMAIL_HOST_USER, [user.email])
         return user
+
+
+class EmailValidationOnForgotPassword(PasswordResetForm):
+    def clean_email(self):
+        email = self.cleaned_data['email']
+        try:
+            Profile.objects.get(email=email)
+        except ObjectDoesNotExist:
+            raise ValidationError("No user exists with this email")
+
+        return email

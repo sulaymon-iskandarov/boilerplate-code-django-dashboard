@@ -46,6 +46,7 @@ class Profile(AbstractUser):
     - last_login
     """
 
+    email = models.EmailField(db_index=True, unique=True)
     birthday = models.DateField(auto_now=False, blank=True, null=True)
     gender = models.CharField(max_length=35, blank=True, null=True)
     phone = models.CharField(max_length=35, blank=True, null=True)

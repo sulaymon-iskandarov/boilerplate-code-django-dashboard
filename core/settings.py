@@ -145,5 +145,9 @@ EMAIL_CONFIRMATION = config("EMAIL_CONFIRMATION", default=False, cast=bool)
 
 DEFAULT_FILE_IMAGE_STORAGE = config("DEFAULT_FILE_IMAGE_STORAGE", default="uploads/")
 
+MEDIA_URL = "/media/"
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
+
 #############################################################
 #############################################################

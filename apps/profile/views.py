@@ -7,8 +7,7 @@ from django.contrib.auth.decorators import login_required
 @login_required(login_url="/login/")
 def profile_view(request):
     profile = request.user
-
-    form = ProfileForm(request.POST or None, instance=profile)
+    form = ProfileForm(request.POST or None, request.FILES or None, instance=profile)
 
     msg = None
 

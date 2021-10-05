@@ -65,7 +65,8 @@ class SignUpForm(UserCreationForm):
         model = Profile
         fields = ('username', 'email', 'password1', 'password2')
 
-    def save(self, commit=True):
+    def save(self, commit=True, *args, **kwargs):
+        domain = kwargs.get('domain')
         user = super().save(commit=False)
         user.set_password(self.cleaned_data["password1"])
 
@@ -83,8 +84,7 @@ class SignUpForm(UserCreationForm):
         token = account_activation_token.make_token(user)
         uid = urlsafe_base64_encode(force_bytes(user.pk))
         subject = 'Activate your account'
-        message = f"This is your activation link. " \
-                  f"http://localhost:8002/activate/{uid}/{token}/"
+        message = f"This is your activation link. http://{domain}/activate/{uid}/{token}/"
         send_mail(subject, message, settings.EMAIL_HOST_USER, [user.email])
         return user
 

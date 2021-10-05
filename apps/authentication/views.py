@@ -9,6 +9,7 @@ from django.shortcuts import render, redirect
 from django.utils.encoding import force_text
 from django.utils.http import urlsafe_base64_decode
 from django.core.exceptions import ObjectDoesNotExist
+from django.contrib.sites.shortcuts import get_current_site
 
 from apps.authentication.token import account_activation_token
 from apps.profile.models import Profile
@@ -56,7 +57,8 @@ def register_user(request):
     if request.method == "POST":
         form = SignUpForm(request.POST)
         if form.is_valid():
-            form.save()
+            form_kwargs = {'domain': get_current_site(request).domain}
+            form.save(**form_kwargs)
             username = form.cleaned_data.get("username")
             raw_password = form.cleaned_data.get("password1")
             user = authenticate(username=username, password=raw_password)

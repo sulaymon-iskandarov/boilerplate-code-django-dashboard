@@ -129,7 +129,7 @@ STATICFILES_DIRS = (
 EMAIL_BACKEND = config("EMAIL_BACKEND", "django.core.mail.backends.console.EmailBackend")
 EMAIL_HOST = config("EMAIL_HOST", default="")
 EMAIL_USE_TLS = True
-EMAIL_PORT = config("EMAIL_HOST", default=587)
+EMAIL_PORT = config("EMAIL_PORT", default=587)
 EMAIL_HOST_USER = config("EMAIL_HOST_USER", default="")
 EMAIL_HOST_PASSWORD = config("EMAIL_HOST_PASSWORD", default="")
 

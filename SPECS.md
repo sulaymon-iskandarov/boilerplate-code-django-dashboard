@@ -15,7 +15,10 @@ The product should provide all features listed below:
   - Improved Files organization
   - Optimized imports
   - Docker Scripts Update
-- **Status: WIP** - Improved Authentication: Extended user model, Password reset, Email confirmation on register
+- **Status: DONE** - Improved Authentication: 
+  - Extended user model 
+  - Password reset 
+  - Email confirmation on register
   - New user Fields: all information presented in the settings page:
     - First, Last Name
     - Birthday, Gender, Email, Phone   

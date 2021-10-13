@@ -1,5 +1,18 @@
 # Change Log
 
+## [2.0.5] 2021-10-13 
+### Improvements
+
+- Improved Authentication: 
+  - Extended user model 
+  - Password reset 
+  - (Optional) Email confirmation on register
+- New user Fields: all information presented in the settings page:
+  - First, Last Name
+  - Birthday, Gender, Email, Phone   
+  - Address, Number, City, ZIP
+  - User Photo
+
 ## [2.0.4] 2021-09-15 
 ### Improvements
 

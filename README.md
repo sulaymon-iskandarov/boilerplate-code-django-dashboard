@@ -25,12 +25,15 @@
 
 > Roadmap as specified by the product [SPECS](https://github.com/app-generator/boilerplate-code-django-dashboard/blob/master/SPECS.md)
 
-- [Done] Updated dependencies
-- [Done] Pythonic Footprint
-- [WIP] Improved Authentication: 
-  - Extended user model
-  - Password reset
-  - Email confirmation on register
+- [x] **Updated dependencies**
+- [x] **Pythonic Footprint**
+- [x] **Improved Authentication**: 
+  - [x] Password reset
+  - [x] Email confirmation on register
+  - [x] Extended user model
+    - [x] First, Last Name
+    - [x] Birthday, Gender, Email, Phone
+    - [x] User Photo
 - [WIP] API via DRF
 - [WIP] Data Tables - manages paginated information 
 - [WIP] Sample Charts

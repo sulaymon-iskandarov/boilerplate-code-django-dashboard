@@ -59,3 +59,7 @@ class Profile(AbstractUser):
     user_photo = models.ImageField(upload_to=settings.DEFAULT_FILE_IMAGE_STORAGE, null=True, blank=True)
 
     objects = ProfileManager()
+
+    @property
+    def name(self):
+        return f"{self.first_name} {self.last_name}"

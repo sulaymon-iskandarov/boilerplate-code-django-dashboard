@@ -95,7 +95,7 @@
                             {% if request.user.user_photo %}
                                 <img src="/static{{ request.user.user_photo.url }}" class="avatar-xl rounded-circle mx-auto mt-n7 mb-4">
                              {% else %}
-                                <img src="/static/assets/img/team/profile-picture-1.jpg" class="avatar-xl rounded-circle mx-auto mt-n7 mb-4">
+                                <img src="/static/assets/img/default-user.png" class="avatar-xl rounded-circle mx-auto mt-n7 mb-4">
                             {% endif %}
                         </div>
                     </div>
@@ -237,10 +237,10 @@
                             {% if request.user.user_photo %}
                                 <img src="/static{{ request.user.user_photo.url }}" class="avatar-xl rounded-circle mx-auto mt-n7 mb-4" alt="{{ request.user.username }} Portrait">
                              {% else %}
-                                <img src="/static/assets/img/team/profile-picture-1.jpg" class="avatar-xl rounded-circle mx-auto mt-n7 mb-4" alt="Neil Portrait">
+                                <img src="/static/assets/img/default-user.png" class="avatar-xl rounded-circle mx-auto mt-n7 mb-4" alt="Neil Portrait">
                             {% endif %}
                             <h4 class="h3">
-                                Neil Sims
+                                {{ request.user.name }}
                             </h4>
                             <h5 class="fw-normal">
                                 {{ request.user.username }}

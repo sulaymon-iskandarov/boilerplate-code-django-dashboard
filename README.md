@@ -23,7 +23,7 @@
 
 <br />
 
-> Roadmap as specified by the product [SPECS](https://github.com/app-generator/boilerplate-code-django-dashboard/blob/master/SPECS.md)
+> **[Product Roadmap](https://github.com/app-generator/boilerplate-code-django-dashboard/blob/master/SPECS.md)**
 
 - [x] **Updated dependencies**
 - [x] **Pythonic Footprint**

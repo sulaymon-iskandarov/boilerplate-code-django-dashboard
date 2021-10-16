@@ -28,9 +28,9 @@
 - [x] **Updated dependencies**
 - [x] **Pythonic Footprint**
 - [x] **Improved Authentication**: 
-  - [x] Password reset
-  - [x] Email confirmation on register
-  - [x] Extended user model
+  - [x] `Password reset`
+  - [x] `Email confirmation on register`
+  - [x] `Extended user model`
     - [x] First, Last Name
     - [x] Birthday, Gender, Email, Phone
     - [x] User Photo

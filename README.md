@@ -34,19 +34,19 @@
     - [x] First, Last Name
     - [x] Birthday, Gender, Email, Phone
     - [x] User Photo
-- [WIP] API via DRF
-- [WIP] Data Tables - manages paginated information 
-- [WIP] Sample Charts
-- [WIP] Social Login
+- [WIP] `API` via DRF
+- [WIP] `Data Tables` - manages paginated information 
+- [WIP] `Sample Charts`
+- [WIP] `Social Login`
   - [WIP] Google
   - [WIP] Github
-- [WIP] Deployment: 
+- [WIP] `Deployment`: 
   - [x] Docker 
   - [WIP] HEROKU 
   - [WIP] AWS Ec2 
   - [WIP] Google Cloud 
   - [WIP] Azure
-- [WIP] Payments: One-time payments via [Stripe Checkout](https://stripe.com/payments/checkout)
+- [WIP] `Payments`: One-time payments via [Stripe Checkout](https://stripe.com/payments/checkout)
 
 <br />
 

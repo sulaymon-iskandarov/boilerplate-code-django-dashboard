@@ -31,7 +31,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'apps.home',  # Enable the inner home (home)
-    'apps.profile'
+    'apps.profile',
+    'apps.datatables'
 ]
 
 AUTH_USER_MODEL = 'apps_profile.Profile'

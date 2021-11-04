@@ -32,7 +32,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'apps.home',  # Enable the inner home (home)
     'apps.profile',
-    'apps.datatables'
+    'apps.datatables',
+    'import_export'
 ]
 
 AUTH_USER_MODEL = 'apps_profile.Profile'

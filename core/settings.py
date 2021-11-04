@@ -32,7 +32,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'apps.home',  # Enable the inner home (home)
     'apps.profile',
-    'apps.datatables',
+    'apps.datatables'
+    
+    # Modules
     'import_export'
 ]
 

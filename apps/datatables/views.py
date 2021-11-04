@@ -33,8 +33,6 @@ class TransactionView(View):
             html_template = loader.get_template('home/page-500.html')
             return HttpResponse(html_template.render(self.context, request))
 
-        print(context)
-
         return render(request, template, context)
 
     def post(self, request, pk=None, action=None):

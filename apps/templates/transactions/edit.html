@@ -5,15 +5,6 @@
 
 {% block content %}
 
-    <main class="content">
-
-        {% include 'includes/navigation.html' %}
-
-        <div class="preloader bg-soft flex-column justify-content-center align-items-center">
-            <img class="loader-element animate__animated animate__jackInTheBox"
-                 src="{% static 'assets/img/brand/light.svg' %}" height="60" alt="Volt logo">
-        </div>
-
         <div class="py-4">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb breadcrumb-dark breadcrumb-transparent">
@@ -53,9 +44,5 @@
                 </div>
             </div>
         </div>
-
-        {% include 'includes/footer.html' %}
-
-    </main>
 
 {% endblock content %}

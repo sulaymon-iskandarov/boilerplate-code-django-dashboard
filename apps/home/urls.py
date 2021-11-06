@@ -13,8 +13,8 @@ urlpatterns = [
     # The home page
     path('', views.index, name='home'),
     path('settings/', profile_view, name="settings"),
-    path('transactions/', TransactionView.as_view(), name="transactions"),
-
+    re_path(r'^transactions/(?:(?P<pk>\d+)/)?(?:(?P<action>\w+)/)?', TransactionView.as_view(),
+            name='transactions'),
     # Matches any html file
     re_path(r'^.*\.*', views.pages, name='pages'),
 

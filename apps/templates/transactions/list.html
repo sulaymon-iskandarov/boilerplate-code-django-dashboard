@@ -80,7 +80,7 @@
                 <!-- Item -->
                 {% if transactions is not True %}
                     {% for transaction in transactions %}
-                        <tr class="item-row" data-edit="{% url 'transactions' transaction.id 'edit' %}"
+                        <tr class="item-row" data-edit="{% url 'transactions' transaction.id 'edit_row' %}"
                             data-detail="{% url 'transactions' transaction.id %}">
                             <td><span class="font-weight-bold">{{ transaction.id }}</span></td>
                             <td><span class="font-weight-normal">{{ transaction.bill_for }}</span></td>

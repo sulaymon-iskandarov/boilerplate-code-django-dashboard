@@ -18,7 +18,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head> 
+<head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!-- Primary Meta Tags -->
 
@@ -57,7 +57,7 @@
 <meta name="theme-color" content="#ffffff">
 
 <!-- FA Icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <!-- Sweet Alert -->
@@ -69,7 +69,10 @@
 <!-- Volt CSS -->
 <link type="text/css" href="/static/assets/css/volt.css" rel="stylesheet">
 
-<!-- Specific Page JS goes HERE  -->    
+    <link type="text/css" href="/static/app_assets/jquery/css/jquery-confirm.min.css" rel="stylesheet">
+
+
+<!-- Specific Page JS goes HERE  -->
 {% block stylesheets %}{% endblock stylesheets %}
 
 </head>
@@ -80,7 +83,7 @@
     {% include 'includes/scripts.html' %}
 
     <!-- Specific Page JS goes HERE  -->
-    {% block javascripts %}{% endblock javascripts %}  
+    {% block javascripts %}{% endblock javascripts %}
 
 </body>
 </html>

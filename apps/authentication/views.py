@@ -3,19 +3,18 @@
 Copyright (c) 2019 - present AppSeed.us
 """
 
+from django.conf import settings
 # Create your views here.
 from django.contrib.auth import authenticate, login
+from django.contrib.sites.shortcuts import get_current_site
+from django.core.exceptions import ObjectDoesNotExist
 from django.shortcuts import render, redirect
 from django.utils.encoding import force_text
 from django.utils.http import urlsafe_base64_decode
-from django.core.exceptions import ObjectDoesNotExist
-from django.contrib.sites.shortcuts import get_current_site
 
 from apps.authentication.token import account_activation_token
 from apps.profile.models import Profile
 from .forms import LoginForm, SignUpForm
-
-from django.conf import settings
 
 
 def login_view(request):

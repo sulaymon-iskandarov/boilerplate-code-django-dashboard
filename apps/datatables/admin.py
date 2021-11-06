@@ -4,10 +4,10 @@ Copyright (c) 2019 - present AppSeed.us
 """
 
 from django.contrib import admin
-
-from apps.datatables.models import Transaction
 from import_export import resources
 from import_export.admin import ImportMixin
+
+from apps.datatables.models import Transaction
 
 
 class TransactionResource(resources.ModelResource):

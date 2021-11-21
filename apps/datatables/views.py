@@ -8,7 +8,7 @@ from django.urls import reverse
 from django.views import View
 
 from apps.datatables.forms import TransactionForm
-from apps.datatables.models import Transaction
+from apps.home.models import Data
 from apps.utils import set_pagination
 
 
@@ -60,6 +60,7 @@ class TransactionView(View):
 
     def list(self, request):
         filter_params = None
+        transactions = Data.objects.filter(type='product')
 
         search = request.GET.get('search')
         if search:
@@ -71,7 +72,8 @@ class TransactionView(View):
                     else:
                         filter_params |= Q(bill_for__icontains=key.strip())
 
-        transactions = Transaction.objects.filter(filter_params) if filter_params else Transaction.objects.all()
+        if filter_params:
+            transactions = transactions.filter(filter_params)
 
         self.context['transactions'], self.context['info'] = set_pagination(request, transactions)
         if not self.context['transactions']:
@@ -98,7 +100,7 @@ class TransactionView(View):
     """ Common methods """
 
     def get_object(self, pk):
-        transaction = get_object_or_404(Transaction, id=pk)
+        transaction = get_object_or_404(Data, id=pk)
         return transaction
 
     def get_row_item(self, pk):

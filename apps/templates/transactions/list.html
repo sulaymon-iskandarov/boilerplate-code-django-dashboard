@@ -64,12 +64,9 @@
             <thead>
             <tr>
                 <th>#</th>
-                <th>Bill For</th>
-                <th>Issue Date</th>
-                <th>Due Date</th>
-                <th>Total</th>
-                <th>Status</th>
-                <th>Action</th>
+                <th>Name</th>
+                <th>Timestamp</th>
+                <th>Value</th>
             </tr>
             </thead>
             <tbody>
@@ -79,13 +76,9 @@
                     <tr class="item-row" data-edit="{% url 'transactions' transaction.id 'edit' %}"
                         data-detail="{% url 'transactions' transaction.id %}">
                         <td><span class="font-weight-bold">{{ transaction.id }}</span></td>
-                        <td><span class="font-weight-normal">{{ transaction.bill_for }}</span></td>
-                        <td><span class="font-weight-normal">{{ transaction.issue_date|date:"d M Y" }}</span></td>
-                        <td><span class="font-weight-normal">{{ transaction.due_date|date:"d M Y" }}</span></td>
-                        <td><span class="font-weight-bold">${{ transaction.total }}</span></td>
-                        <td>
-                            <span class="font-weight-bold {{ transaction.status_info.class }}">{{ transaction.status }}</span>
-                        </td>
+                        <td><span class="font-weight-normal">{{ transaction.name }}</span></td>
+                        <td><span class="font-weight-normal">{{ transaction.ts|date:"d M Y" }}</span></td>
+                        <td><span class="font-weight-bold">${{ transaction.value }}</span></td>
                         <td>
                             <div class="btn-group">
                                 <button class="btn btn-link text-dark dropdown-toggle dropdown-toggle-split m-0 p-0"

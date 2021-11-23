@@ -60,7 +60,7 @@ class TransactionView(View):
 
     def list(self, request):
         filter_params = None
-        transactions = Data.objects.filter(type='product')
+        transactions = Data.objects.filter(type='transaction')
 
         search = request.GET.get('search')
         if search:

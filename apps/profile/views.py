@@ -21,6 +21,6 @@ def profile_view(request):
             msg = "Profile Updated successfully."
 
         else:
-            msg = 'Error validating the form'
+            msg = "Error validating the form"
 
     return render(request, "home/settings.html", {"form": form, "msg": msg})

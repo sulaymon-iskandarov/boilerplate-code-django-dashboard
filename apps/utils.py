@@ -11,7 +11,7 @@ def set_pagination(request, items):
 
     params = request.GET
     item_len = len(items)
-    items_number = int(params.get('items_number')) if "items_number" in params else 10
+    items_number = int(params.get("items_number")) if "items_number" in params else 10
     page = int(params.get("page")) if "page" in params else 1
     pages_number = math.ceil(item_len / items_number)
 
@@ -23,21 +23,30 @@ def set_pagination(request, items):
 
     url_params = dict()
     for key in params:
-        if key != 'page':
+        if key != "page":
             url_params[key] = params[key]
 
     page_range = None
     if page in range(1, 7) and pages_number >= 7:
         page_range = [i for i in range(1, 8)]
-        page_range += ['...']
+        page_range += ["..."]
     elif page >= 7 and (page + 6) < pages_number:
-        page_range = ['...']
+        page_range = ["..."]
         page_range += [i for i in range(page - 3, page + 4)]
-        page_range += ['...']
+        page_range += ["..."]
     elif page in range(pages_number - 7, pages_number + 1):
-        page_range = ['...']
+        page_range = ["..."]
         page_range += [i for i in range(pages_number - 7, pages_number + 1)]
 
-    context = dict(items=items, page_range=page_range, last=pages_number, url_params=urlencode(url_params))
-    items.pagination = render_to_string('transactions/partial/pagination.html', context)
-    return items, {'current_page': page, 'items': item_len, 'items_on_page': items_number}
+    context = dict(
+        items=items,
+        page_range=page_range,
+        last=pages_number,
+        url_params=urlencode(url_params),
+    )
+    items.pagination = render_to_string("transactions/partial/pagination.html", context)
+    return items, {
+        "current_page": page,
+        "items": item_len,
+        "items_on_page": items_number,
+    }

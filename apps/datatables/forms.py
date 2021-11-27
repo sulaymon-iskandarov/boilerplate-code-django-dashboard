@@ -9,9 +9,8 @@ class TransactionForm(forms.ModelForm):
                                widget=forms.TextInput(
                                    attrs={'class': 'form-control transaction', 'placeholder': '...'}))
     ts = forms.DateField(label="Timestamp", widget=forms.DateInput(
-        attrs={'class': 'form-control datepicker_input transaction', 'placeholder': 'yyyy-mm-dd'}), disabled=True)
-
-    field_order = ('id', 'name', 'ts', 'value')
+        attrs={'class': 'form-control datepicker_input transaction', 'value': 'DD-MM-YYYY'}), required=False,
+                         disabled=True)
 
     class Meta:
         model = Data

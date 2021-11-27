@@ -13,10 +13,10 @@ from apps.home.models import Data
 class TransactionResource(resources.ModelResource):
     class Meta:
         model = Data
-        fields = ['id', 'type', 'name', 'value', 'ts']
+        fields = ["id", "type", "name", "value", "ts"]
 
 
 @admin.register(Data)
 class TransactionAdmin(ImportMixin, admin.ModelAdmin):
-    list_display = ['id', 'type', 'name', 'value', 'ts']
+    list_display = ["id", "type", "name", "value", "ts"]
     resource_class = TransactionResource

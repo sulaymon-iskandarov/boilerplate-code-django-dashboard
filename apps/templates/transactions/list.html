@@ -49,10 +49,12 @@
                     </button>
                     <div class="dropdown-menu dropdown-menu-xs dropdown-menu-right">
                         <span class="dropdown-item font-weight-bold text-dark">Show</span>
-                        <a class="dropdown-item d-flex font-weight-bold" href="#">10 <span
-                                class="icon icon-small ml-auto"><span class="fas fa-check"></span></span></a>
-                        <a class="dropdown-item font-weight-bold" href="#">20</a>
-                        <a class="dropdown-item font-weight-bold" href="#">30</a>
+                        <a class="dropdown-item font-weight-bold" href="?items_number=10">10 {% if info.items_on_page == 10 %}<span
+                                class="icon icon-small ml-auto"><span class="fas fa-check"></span></span>{% endif %} </a>
+                        <a class="dropdown-item font-weight-bold" href="?items_number=20">20 {% if info.items_on_page == 20 %}<span
+                                class="icon icon-small ml-auto"><span class="fas fa-check"></span></span>{% endif %} </a>
+                        <a class="dropdown-item font-weight-bold" href="?items_number=30">30 {% if info.items_on_page == 30 %}<span
+                                class="icon icon-small ml-auto"><span class="fas fa-check"></span></span>{% endif %} </a>
                     </div>
                 </div>
             </div>
@@ -65,8 +67,8 @@
             <tr>
                 <th>#</th>
                 <th>Name</th>
-                <th>Timestamp</th>
                 <th>Value</th>
+                <th>Timestamp</th>
             </tr>
             </thead>
             <tbody>
@@ -77,8 +79,8 @@
                         data-detail="{% url 'transactions' transaction.id %}">
                         <td><span class="font-weight-bold">{{ transaction.id }}</span></td>
                         <td><span class="font-weight-normal">{{ transaction.name }}</span></td>
-                        <td><span class="font-weight-normal">{{ transaction.ts|date:"d M Y" }}</span></td>
                         <td><span class="font-weight-bold">${{ transaction.value }}</span></td>
+                        <td><span class="font-weight-normal">{{ transaction.ts|date:"d M Y" }}</span></td>
                         <td>
                             <div class="btn-group">
                                 <button class="btn btn-link text-dark dropdown-toggle dropdown-toggle-split m-0 p-0"

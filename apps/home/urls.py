@@ -10,13 +10,14 @@ from apps.home import views
 from apps.profile.views import profile_view
 
 urlpatterns = [
-
     # The home page
-    path('', views.index, name='home'),
-    path('settings/', profile_view, name="settings"),
-    re_path(r'^transactions/(?:(?P<pk>\d+)/)?(?:(?P<action>\w+)/)?', TransactionView.as_view(),
-            name='transactions'),
+    path("", views.index, name="home"),
+    path("settings/", profile_view, name="settings"),
+    re_path(
+        r"^transactions/(?:(?P<pk>\d+)/)?(?:(?P<action>\w+)/)?",
+        TransactionView.as_view(),
+        name="transactions",
+    ),
     # Matches any html file
-    re_path(r'^.*\.*', views.pages, name='pages'),
-
+    re_path(r"^.*\.*", views.pages, name="pages"),
 ]

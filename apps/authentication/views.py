@@ -4,6 +4,7 @@ Copyright (c) 2019 - present AppSeed.us
 """
 
 from django.conf import settings
+
 # Create your views here.
 from django.contrib.auth import authenticate, login
 from django.contrib.sites.shortcuts import get_current_site
@@ -29,8 +30,8 @@ def login_view(request):
             password = form.cleaned_data.get("password")
             user = authenticate(username=username, password=password)
             if user is not None:
-                    login(request, user)
-                    return redirect("/")
+                login(request, user)
+                return redirect("/")
             else:
                 try:
                     user_temp = Profile.objects.get(username=username)
@@ -40,11 +41,11 @@ def login_view(request):
                 if user_temp is None:
                     msg = "This account doesn't exist."
                 elif not user_temp.is_active:
-                    msg = 'Inactive account - Please confirm your email or contact support'
+                    msg = "Inactive account - Please confirm your email or contact support"
                 else:
-                    msg = 'Invalid credentials'
+                    msg = "Invalid credentials"
         else:
-            msg = 'Error validating the form'
+            msg = "Error validating the form"
 
     return render(request, "accounts/login.html", {"form": form, "msg": msg})
 
@@ -56,7 +57,7 @@ def register_user(request):
     if request.method == "POST":
         form = SignUpForm(request.POST)
         if form.is_valid():
-            form_kwargs = {'domain': get_current_site(request).domain}
+            form_kwargs = {"domain": get_current_site(request).domain}
             form.save(**form_kwargs)
             username = form.cleaned_data.get("username")
             raw_password = form.cleaned_data.get("password1")
@@ -65,18 +66,22 @@ def register_user(request):
             success = True
 
             if settings.EMAIL_CONFIRMATION:
-                msg = 'User created (inactive state). <br />Please confirm your email.'
+                msg = "User created (inactive state). <br />Please confirm your email."
             else:
                 msg = 'User created - please <a href="/login">login</a>.'
 
             # return redirect("/login/")
 
         else:
-            msg = 'Form is not valid'
+            msg = "Form is not valid"
     else:
         form = SignUpForm()
 
-    return render(request, "accounts/register.html", {"form": form, "msg": msg, "success": success})
+    return render(
+        request,
+        "accounts/register.html",
+        {"form": form, "msg": msg, "success": success},
+    )
 
 
 def activate_account(request, uidb64, token):
@@ -89,8 +94,12 @@ def activate_account(request, uidb64, token):
     if user is not None and account_activation_token.check_token(user, token):
         user.is_active = True
         user.save()
-        msg = 'Your account have been confirmed.'
-        return render(request, 'registration/activation.html', {"msg": msg, "success": True})
+        msg = "Your account have been confirmed."
+        return render(
+            request, "registration/activation.html", {"msg": msg, "success": True}
+        )
     else:
-        msg = 'The confirmation link was invalid, possibly because it has already been used.'
-        return render(request, 'registration/activation.html', {"msg": msg, "success": False})
+        msg = "The confirmation link was invalid, possibly because it has already been used."
+        return render(
+            request, "registration/activation.html", {"msg": msg, "success": False}
+        )

@@ -68,9 +68,9 @@ class TransactionView(View):
             for key in search.split():
                 if key.strip():
                     if not filter_params:
-                        filter_params = Q(bill_for__icontains=key.strip())
+                        filter_params = Q(name__icontains=key.strip())
                     else:
-                        filter_params |= Q(bill_for__icontains=key.strip())
+                        filter_params |= Q(name__icontains=key.strip())
 
         if filter_params:
             transactions = transactions.filter(filter_params)

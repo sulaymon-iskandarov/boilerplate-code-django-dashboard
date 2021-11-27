@@ -49,10 +49,12 @@
                     </button>
                     <div class="dropdown-menu dropdown-menu-xs dropdown-menu-right">
                         <span class="dropdown-item font-weight-bold text-dark">Show</span>
-                        <a class="dropdown-item d-flex font-weight-bold" href="#">10 <span
-                                class="icon icon-small ml-auto"><span class="fas fa-check"></span></span></a>
-                        <a class="dropdown-item font-weight-bold" href="#">20</a>
-                        <a class="dropdown-item font-weight-bold" href="#">30</a>
+                        <a class="dropdown-item font-weight-bold" href="?items_number=10">10 {% if info.items_on_page == 10 %}<span
+                                class="icon icon-small ml-auto"><span class="fas fa-check"></span></span>{% endif %} </a>
+                        <a class="dropdown-item font-weight-bold" href="?items_number=20">20 {% if info.items_on_page == 20 %}<span
+                                class="icon icon-small ml-auto"><span class="fas fa-check"></span></span>{% endif %} </a>
+                        <a class="dropdown-item font-weight-bold" href="?items_number=30">30 {% if info.items_on_page == 30 %}<span
+                                class="icon icon-small ml-auto"><span class="fas fa-check"></span></span>{% endif %} </a>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,13 @@
 # Change Log
 
+## [2.0.6] 2021-11-28 
+### Improvements
+
+- [x] `Data Tables` - manages paginated information
+  - [x] Data load via `admin`
+  - [x] Pagination, Inline edit via Ajax
+  - [x] Simple Search
+
 ## [2.0.5] 2021-10-13 
 ### Improvements
 

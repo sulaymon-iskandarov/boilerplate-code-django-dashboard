@@ -34,8 +34,11 @@
     - [x] First, Last Name
     - [x] Birthday, Gender, Email, Phone
     - [x] User Photo
+- [x] `Data Tables` - manages paginated information
+  - [x] Data load via `admin`
+  - [x] Pagination, Inline edit via Ajax
+  - [x] Simple Search
 - [WIP] `API` via DRF
-- [WIP] `Data Tables` - manages paginated information 
 - [WIP] `Sample Charts`
 - [WIP] `Social Login`
   - [WIP] *Google*

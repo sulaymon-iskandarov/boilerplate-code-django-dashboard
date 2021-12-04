@@ -38,6 +38,7 @@
   - [x] Data load via `admin`
   - [x] Pagination, Inline edit via Ajax
   - [x] Simple Search
+  - [WIP] Export `PDF`/`xls`: one page, multiple pages, filtered by `search` 
 - [WIP] `API` via DRF
 - [WIP] `Sample Charts`
 - [WIP] `Social Login`

@@ -1,7 +1,7 @@
 {
     "name": "boilerplate-code-django-dashboard",
     "mastertemplate": "boilerplate-code-django-dashboard",
-    "version": "2.0.4",
+    "version": "2stable.0.1",
     "description": "Template project - Django Boilerplate Code",
     "scripts": {},
     "repository": {

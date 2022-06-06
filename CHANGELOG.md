@@ -1,5 +1,9 @@
 # Change Log
 
+## [2.0.7] 2022-06-06
+
+- Tag latest `manual` coded version 
+
 ## [2.0.6] 2021-11-28 
 ### Improvements
 

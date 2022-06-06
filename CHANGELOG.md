@@ -1,5 +1,12 @@
 # Change Log
 
+## [2.0.8] 2022-06-06
+### Improvements
+
+- Use generated version
+  - Timestamp: `2022-06-06 13:56`
+  - Build ID: `55e49700-ed76-4c12-8d8a-e063f97f89e5`
+
 ## [2.0.7] 2022-06-06
 
 - Tag latest `manual` coded version 

@@ -1,5 +1,10 @@
 # Change Log
 
+## [2.0.9] Unreleased
+### Improvements
+
+- 2022-06-06: Minor tuning on Registration page
+
 ## [2.0.8] 2022-06-06
 ### Improvements
 

@@ -31,8 +31,8 @@
 
 ```bash
 $ # Get the code
-$ git clone https://github.com/app-generator/boilerplate-code-flask-dashboard.git
-$ cd boilerplate-code-flask-dashboard
+$ git clone https://github.com/app-generator/boilerplate-code-django-dashboard.git
+$ cd boilerplate-code-django-dashboard
 ```
 
 <br />
@@ -53,8 +53,8 @@ Visit `http://localhost:5085` in your browser. The app should be up & running.
 
 ```bash
 $ # Get the code
-$ git clone https://github.com/app-generator/boilerplate-code-flask-dashboard.git
-$ cd boilerplate-code-flask-dashboard
+$ git clone https://github.com/app-generator/boilerplate-code-django-dashboard.git
+$ cd boilerplate-code-django-dashboard
 ```
 
 <br />
